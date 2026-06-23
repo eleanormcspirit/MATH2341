@@ -17,15 +17,40 @@
   <book xml:id="math2341">
     <title>MATH 2341</title>
     <subtitle>Linear Analysis</subtitle>
-    <author>
-      <personname>Eleanor McSpirit</personname>
-      <department>Department of Mathematics</department>
-      <institution>California Polytechnic State University, San Luis Obispo</institution>
-    </author>
 
-    <frontmatter>
-      <xi:include href="frontmatter/overview.ptx" />
-    </frontmatter>
+  <introduction>
+    <paragraphs xml:id="about-this-course">
+    <title>About this Course</title>
+    <p>
+      This course is an introduction to linear algebra and differential equations. It covers the following topics in each.
+    </p>
+    <p>
+      <em> Linear algebra:</em> systems of linear equations, linear transformations, determinants, eigenvalues, eigenvectors, and diagonalization. 
+    </p>
+
+    <p>
+      <em>Differential equations:</em> first-order differential equations, higher order linear differential equations, mechanical and electrical vibrations, systems of differential equations, the Laplace transform.
+    </p>
+  </paragraphs>
+
+  <paragraphs xml:id="about-this-book">
+    <title>About this Book</title>
+    <p>
+      This online book is organized into three main parts:
+      <ul>
+        <li>
+          <em>Course Notes:</em> Here you will find the basic notes for each week. They are meant to be an after-the-fact resource for your review. Reading the notes is not a substitute for attending class and reading the textbook.
+        </li>
+        <li>
+          <em>In-Class Activities:</em> These activities are designed for collaborative work during class, and are meant to confirm and practice the concepts covered in class that week.
+        </li>
+        <li>
+          <em>Problem Sets:</em> Problem sets give you an opportunity to practice and extend the concepts covered in class the previous week. They are meant to be completed outside of class. 
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+  </introduction>
 
     <chapter xml:id="course-notes">
       <title>Course Notes</title>
@@ -48,7 +73,7 @@
     </chapter>
 
     <chapter xml:id="problem-sets">
-      <title>Weekly Problem Sets</title>
+      <title>Problem Sets</title>
       <introduction>
         <p>
           Problem sets give you an opportunity to practice and extend the concepts covered in class the previous week. They are meant to be completed outside of class. 
@@ -57,8 +82,5 @@
       <xi:include href="problem-sets/week-01.ptx" />
     </chapter>
 
-    <backmatter>
-      <index />
-    </backmatter>
   </book>
 </pretext>

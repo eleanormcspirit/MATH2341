@@ -4,11 +4,12 @@
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "lts"
-    }
+    },
+    "ghcr.io/devcontainers/features/git-lfs:1": {}
   },
   "postCreateCommand": "bash .devcontainer/setup-pretext.sh",
   "remoteEnv": {
-    "PATH": "${containerEnv:PATH}:/home/vscode/.local/bin"
+    "PATH": "${containerEnv:PATH}:${containerEnv:HOME}/.local/bin"
   },
   "forwardPorts": [8000],
   "customizations": {

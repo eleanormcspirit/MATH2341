@@ -1,15 +1,6 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "frontmatter-course-overview",
-  "level": "1",
-  "url": "frontmatter-course-overview.html",
-  "type": "Preface",
-  "number": "",
-  "title": "Overview and Navigation",
-  "body": " Overview and Navigation   About this Course  This course is an introduction to linear algebra and differential equations. It covers the following topics in each.   Linear algebra: systems of linear equations, linear transformations, determinants, eigenvalues, eigenvectors, and diagonalization.   Differential equations: first-order differential equations, higher order linear differential equations, mechanical and electrical vibrations, systems of differential equations, the Laplace transform.    About this Book  This online book is organized into three main parts:   Course Notes: Here you will find the basic notes for each week. They are meant to be an after-the-fact resource for your review. Reading the notes is not a substitute for attending class and reading the textbook.   In-Class Activities: These activities are designed for collaborative work during class, and are meant to confirm and practice the concepts covered in class that week.   Problem Sets: Problem sets give you an opportunity to practice and extend the concepts covered in class the previous week. They are meant to be completed outside of class.    Use the table of contents to jump between weeks. The search box is useful when you remember a phrase but not the location. The index at the end of the book collects important terms, notation, and methods.   "
-},
-{
   "id": "notes-week-01",
   "level": "1",
   "url": "notes-week-01.html",

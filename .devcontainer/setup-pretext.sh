@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-python -m pip install --upgrade pip
-python -m pip install --user pretext
+python3 -m pip install --upgrade pip
+python3 -m pip install --user -r requirements.txt
 
 echo ""
 echo "PreTeXt setup complete."
-echo "Try: pretext --version"
-echo "Then build with: pretext build web"
+python3 -m pretext --version
+echo "Build with: python3 -m pretext build web"
