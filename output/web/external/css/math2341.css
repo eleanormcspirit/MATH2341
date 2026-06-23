@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
 :root {
   --math2341-poly-green: #154734;
   --math2341-mustang-gold: #BD8B13;
@@ -10,13 +12,35 @@ body {
   color: var(--math2341-ink);
 }
 
-/* Give the HTML output a more classic LaTeX-like reading texture. */
+/* Make the main HTML text feel closer to LaTeX. */
 body,
 .ptx-content,
 .ptx-page,
-article {
-  font-family: "Latin Modern Roman", "Computer Modern Serif", "CMU Serif",
-    "STIX Two Text", "Times New Roman", serif;
+article,
+.ptx-content p,
+.ptx-content li,
+.ptx-content td,
+.ptx-content th,
+.ptx-content .para,
+.ptx-content .statement,
+.ptx-content .proof,
+.ptx-content .solution,
+.ptx-content .hint,
+.ptx-content .answer {
+  font-family: "STIX Two Text", "Latin Modern Roman", "Computer Modern Serif",
+    "CMU Serif", "Times New Roman", serif !important;
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+}
+
+.ptx-content {
+  font-size: 1.04rem;
+  line-height: 1.55;
+}
+
+.ptx-content p {
+  margin-top: 0.55rem;
+  margin-bottom: 0.55rem;
 }
 
 .ptx-content h1,
@@ -26,8 +50,8 @@ article {
 .ptx-content .heading,
 .ptx-content .title {
   color: var(--math2341-poly-green);
-  font-family: "Latin Modern Roman", "Computer Modern Serif", "CMU Serif",
-    "STIX Two Text", "Times New Roman", serif;
+  font-family: "STIX Two Text", "Latin Modern Roman", "Computer Modern Serif",
+    "CMU Serif", "Times New Roman", serif !important;
 }
 
 .ptx-content a {
@@ -49,4 +73,13 @@ article {
 
 .ptx-content .assemblage {
   border-color: var(--math2341-mustang-gold);
+}
+
+.ptx-content .sagecell,
+.ptx-content .sage,
+.ptx-content pre,
+.ptx-content code,
+.ptx-content .code {
+  font-family: "Latin Modern Mono", "CMU Typewriter Text", "SFMono-Regular",
+    Consolas, "Liberation Mono", monospace;
 }

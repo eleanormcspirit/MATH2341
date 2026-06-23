@@ -8,10 +8,12 @@
       publication="../publication/publication.ptx"
       output-dir="web" />
     <target
-      name="print"
-      format="pdf"
+      name="web"
+      format="html"
       source="main.ptx"
       publication="../publication/publication.ptx"
-      output-dir="print" />
+      output-dir="web">
+      <stringparams html.css.extra="external/css/math2341.css" />
+    </target>
   </targets>
 </project>

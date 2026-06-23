@@ -2,7 +2,7 @@
 set -euo pipefail
 
 python -m pip install --upgrade pip
-python -m pip install --user "pretext[all]"
+python -m pip install --user pretext
 
 echo ""
 echo "PreTeXt setup complete."

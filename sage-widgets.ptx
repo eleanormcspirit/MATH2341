@@ -1,0 +1,155 @@
+<section xml:id="sage-widget-gallery">
+  <title>Sage Widget Gallery</title>
+
+  <introduction>
+    <p>
+      The widgets on this page use SageMath through PreTeXt&apos;s Sage Cell
+      support. In HTML output, students can change the visible inputs and press
+      the evaluation button. In print output, the same cells appear as static
+      examples.
+    </p>
+  </introduction>
+
+  <subsection xml:id="sage-widget-matrix-operations">
+    <title>Matrix Operations</title>
+
+    <p>
+      Enter a matrix as a list of rows, such as <c>[[1,2,3],[4,5,6]]</c>.
+      Then choose the operation.
+    </p>
+
+    <sage>
+      <input><![CDATA[from ast import literal_eval
+
+def read_matrix(text):
+    return matrix(QQ, literal_eval(text))
+
+@interact
+def matrix_tool(
+    A_text=input_box(default="[[1,2,3],[4,5,6],[7,8,10]]",
+                     label="Matrix A"),
+    operation=selector(["RREF", "Rank", "Determinant", "Inverse", "Eigenvalues"],
+                       label="Operation")
+):
+    try:
+        A = read_matrix(A_text)
+        print("A =")
+        show(A)
+
+        if operation == "RREF":
+            print("Reduced row echelon form:")
+            show(A.rref())
+        elif operation == "Rank":
+            print("rank(A) =", A.rank())
+        elif operation == "Determinant":
+            if A.nrows() != A.ncols():
+                print("The determinant is only defined for square matrices.")
+            else:
+                print("det(A) =", A.det())
+        elif operation == "Inverse":
+            if A.nrows() != A.ncols():
+                print("Only square matrices can be invertible.")
+            elif A.det() == 0:
+                print("A is singular, so it does not have an inverse.")
+            else:
+                show(A.inverse())
+        elif operation == "Eigenvalues":
+            if A.nrows() != A.ncols():
+                print("Eigenvalues are only defined for square matrices.")
+            else:
+                print("Eigenvalues with algebraic multiplicity:")
+                show(A.eigenvalues())
+    except Exception as err:
+        print("Please enter a matrix as rows, for example [[1,2],[3,4]].")
+        print("Sage error:", err)
+]]></input>
+      <output>Use the HTML version to run the interactive matrix widget.</output>
+    </sage>
+  </subsection>
+
+  <subsection xml:id="sage-widget-span-basis">
+    <title>Span and Basis Checker</title>
+
+    <p>
+      Enter vectors as a list, such as <c>[[1,0,1],[0,1,1],[1,1,2]]</c>.
+      The widget checks linear independence and gives a basis for the span.
+    </p>
+
+    <sage>
+      <input><![CDATA[from ast import literal_eval
+
+def read_vectors(text):
+    return [vector(QQ, row) for row in literal_eval(text)]
+
+@interact
+def span_basis_tool(
+    vectors_text=input_box(default="[[1,0,1],[0,1,1],[1,1,2]]",
+                           label="Vectors")
+):
+    try:
+        vectors = read_vectors(vectors_text)
+        if len(vectors) == 0:
+            print("Enter at least one vector.")
+            return
+
+        n = len(vectors[0])
+        if any(len(v) != n for v in vectors):
+            print("All vectors must have the same length.")
+            return
+
+        M = matrix(QQ, [list(v) for v in vectors]).transpose()
+        print("Using the input vectors as columns gives the matrix")
+        show(M)
+        print("rank =", M.rank())
+
+        if M.rank() == len(vectors):
+            print("The vectors are linearly independent.")
+        else:
+            print("The vectors are linearly dependent.")
+            print("One nonzero relation vector is:")
+            show(M.right_kernel().basis()[0])
+
+        print("A basis for the span is:")
+        for v in M.column_space().basis():
+            show(v)
+    except Exception as err:
+        print("Please enter vectors like [[1,0,1],[0,1,1]].")
+        print("Sage error:", err)
+]]></input>
+      <output>Use the HTML version to run the interactive span and basis checker.</output>
+    </sage>
+  </subsection>
+
+  <subsection xml:id="sage-widget-direction-field">
+    <title>Direction Field for <m>y'=f(x,y)</m></title>
+
+    <p>
+      Enter the right-hand side of a first-order differential equation. Good
+      starter examples include <c>x-y</c>, <c>y*(1-y)</c>, and <c>sin(x)-y</c>.
+    </p>
+
+    <sage>
+      <input><![CDATA[@interact
+def direction_field_tool(
+    f_text=input_box(default="x-y", label="f(x,y)"),
+    x_min=input_box(default=-4, label="x min"),
+    x_max=input_box(default=4, label="x max"),
+    y_min=input_box(default=-4, label="y min"),
+    y_max=input_box(default=4, label="y max")
+):
+    try:
+        x = var('x')
+        y = var('y')
+        f = sage_eval(f_text, locals={'x': x, 'y': y,
+                                      'sin': sin, 'cos': cos, 'exp': exp})
+        print("Direction field for y' =")
+        show(f)
+        show(plot_slope_field(f, (x, x_min, x_max), (y, y_min, y_max)))
+    except Exception as err:
+        print("Try an expression such as x-y, y*(1-y), or sin(x)-y.")
+        print("Sage error:", err)
+]]></input>
+      <output>Use the HTML version to run the interactive direction field widget.</output>
+    </sage>
+  </subsection>
+</section>

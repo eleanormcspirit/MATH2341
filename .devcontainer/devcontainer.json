@@ -1,6 +1,11 @@
 {
   "name": "MATH 2341 PreTeXt",
   "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
   "postCreateCommand": "bash .devcontainer/setup-pretext.sh",
   "remoteEnv": {
     "PATH": "${containerEnv:PATH}:/home/vscode/.local/bin"
