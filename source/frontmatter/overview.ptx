@@ -1,38 +1,33 @@
 <preface xml:id="frontmatter-course-overview">
-  <title>Course Overview and Navigation</title>
+  <title>Overview and Navigation</title>
 
-  <section xml:id="course-description">
-    <title>Course Description</title>
+  <paragraphs xml:id="course-description">
+    <title>About this Course</title>
     <p>
-      MATH 2341: Linear Analysis introduces computational and conceptual tools
-      from numerical linear algebra and differential equations. The course
-      emphasizes mathematical modeling, matrix methods, numerical approximation,
-      qualitative behavior of differential equations, and clear communication of
-      mathematical reasoning.
+      This course is an introduction to linear algebra and differential equations. It covers the following topics in each.
+    </p>
+    <p>
+      <em> Linear algebra:</em> systems of linear equations, linear transformations, determinants, eigenvalues, eigenvectors, and diagonalization. 
     </p>
 
     <p>
-      Edit this paragraph to match the official Cal Poly catalog description,
-      your departmental expectations, and your specific course emphasis.
+      <em>Differential equations:</em> first-order differential equations, higher order linear differential equations, mechanical and electrical vibrations, systems of differential equations, the Laplace transform.
     </p>
-  </section>
+  </paragraphs>
 
-  <section xml:id="how-to-use-this-book">
-    <title>How to Use This Book</title>
+  <paragraphs xml:id="how-to-use-this-book">
+    <title>About this Book</title>
     <p>
       This online book is organized into three main parts:
       <ul>
         <li>
-          <em>Weekly Course Notes</em> contain the definitions, examples, theorems,
-          and worked computations for each week.
+          <em>Course Notes:</em> Here you will find the basic notes for each week. They are meant to be an after-the-fact resource for your review. Reading the notes is not a substitute for attending class and reading the textbook.
         </li>
         <li>
-          <em>Weekly In-Class Activities</em> contain collaborative activities for
-          class meetings.
+          <em>In-Class Activities:</em> These activities are designed for collaborative work during class, and are meant to confirm and practice the concepts covered in class that week.
         </li>
         <li>
-          <em>Weekly Problem Sets</em> contain the assignments connected to each
-          week&apos;s material.
+          <em>Problem Sets:</em> Problem sets give you an opportunity to practice and extend the concepts covered in class the previous week. They are meant to be completed outside of class. 
         </li>
       </ul>
     </p>
@@ -40,21 +35,7 @@
     <p>
       Use the table of contents to jump between weeks. The search box is useful
       when you remember a phrase but not the location. The index at the end of
-      the book collects important terms, notation, and methods. For example,
-      entries such as <idx>row reduction</idx>row reduction,
-      <idx>basis</idx>basis, <idx>Euler&apos;s method</idx>Euler&apos;s method, and
-      <idx>eigenvalue</idx>eigenvalue can be added throughout the notes.
+      the book collects important terms, notation, and methods.
     </p>
-  </section>
-
-  <section xml:id="notation-and-technology">
-    <title>Notation and Technology</title>
-    <p>
-      Vectors are usually written as <m>\vect{v}</m>, matrices as
-      <m>\mat{A}</m>, and real coordinate spaces as <m>\R^n</m>. Computational
-      cells, when included, are meant to support mathematical understanding.
-      Students are not expected to learn a separate programming language unless
-      explicitly stated.
-    </p>
-  </section>
+  </paragraphs>
 </preface>

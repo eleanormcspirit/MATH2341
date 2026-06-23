@@ -15,8 +15,8 @@
   </docinfo>
 
   <book xml:id="math2341">
-    <title>MATH 2341: Linear Analysis</title>
-    <subtitle>Numerical Linear Algebra and Differential Equations</subtitle>
+    <title>MATH 2341</title>
+    <subtitle>Linear Analysis</subtitle>
     <author>
       <personname>Eleanor McSpirit</personname>
       <department>Department of Mathematics</department>
@@ -28,22 +28,20 @@
     </frontmatter>
 
     <chapter xml:id="course-notes">
-      <title>Weekly Course Notes</title>
+      <title>Course Notes</title>
       <introduction>
         <p>
-          These sections contain the main exposition for each week: definitions,
-          examples, theorems, computational tools, and worked problems.
+          Here you will find the basic notes for each week. They are meant to be an after-the-fact resource for your review. Reading the notes is not a substitute for attending class and reading the textbook.
         </p>
       </introduction>
       <xi:include href="notes/week-01.ptx" />
     </chapter>
 
     <chapter xml:id="in-class-activities">
-      <title>Weekly In-Class Activities</title>
+      <title>In-Class Activities</title>
       <introduction>
         <p>
-          These activities are designed for collaborative work during class.
-          They should be short, purposeful, and closely tied to the week&apos;s notes.
+          These activities are designed for collaborative work during class, and are meant to confirm and practice the concepts covered in class that week.  
         </p>
       </introduction>
       <xi:include href="activities/week-01.ptx" />
@@ -53,8 +51,7 @@
       <title>Weekly Problem Sets</title>
       <introduction>
         <p>
-          Problem sets collect practice, computation, proof-writing, and reflection
-          exercises. Add one section per week.
+          Problem sets give you an opportunity to practice and extend the concepts covered in class the previous week. They are meant to be completed outside of class. 
         </p>
       </introduction>
       <xi:include href="problem-sets/week-01.ptx" />

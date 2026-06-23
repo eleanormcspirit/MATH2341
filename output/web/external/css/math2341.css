@@ -1,0 +1,52 @@
+:root {
+  --math2341-poly-green: #154734;
+  --math2341-mustang-gold: #BD8B13;
+  --math2341-paper: #fbfaf6;
+  --math2341-ink: #1f2522;
+}
+
+body {
+  background: var(--math2341-paper);
+  color: var(--math2341-ink);
+}
+
+/* Give the HTML output a more classic LaTeX-like reading texture. */
+body,
+.ptx-content,
+.ptx-page,
+article {
+  font-family: "Latin Modern Roman", "Computer Modern Serif", "CMU Serif",
+    "STIX Two Text", "Times New Roman", serif;
+}
+
+.ptx-content h1,
+.ptx-content h2,
+.ptx-content h3,
+.ptx-content h4,
+.ptx-content .heading,
+.ptx-content .title {
+  color: var(--math2341-poly-green);
+  font-family: "Latin Modern Roman", "Computer Modern Serif", "CMU Serif",
+    "STIX Two Text", "Times New Roman", serif;
+}
+
+.ptx-content a {
+  color: var(--math2341-poly-green);
+}
+
+.ptx-content a:hover,
+.ptx-content a:focus {
+  color: var(--math2341-mustang-gold);
+}
+
+.ptx-content .definition-like,
+.ptx-content .theorem-like,
+.ptx-content .example-like,
+.ptx-content .remark-like {
+  border-left: 0.22rem solid var(--math2341-poly-green);
+  padding-left: 0.9rem;
+}
+
+.ptx-content .assemblage {
+  border-color: var(--math2341-mustang-gold);
+}
