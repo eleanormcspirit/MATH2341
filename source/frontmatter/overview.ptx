@@ -1,0 +1,60 @@
+<preface xml:id="frontmatter-course-overview">
+  <title>Course Overview and Navigation</title>
+
+  <section xml:id="course-description">
+    <title>Course Description</title>
+    <p>
+      MATH 2341: Linear Analysis introduces computational and conceptual tools
+      from numerical linear algebra and differential equations. The course
+      emphasizes mathematical modeling, matrix methods, numerical approximation,
+      qualitative behavior of differential equations, and clear communication of
+      mathematical reasoning.
+    </p>
+
+    <p>
+      Edit this paragraph to match the official Cal Poly catalog description,
+      your departmental expectations, and your specific course emphasis.
+    </p>
+  </section>
+
+  <section xml:id="how-to-use-this-book">
+    <title>How to Use This Book</title>
+    <p>
+      This online book is organized into three main parts:
+      <ul>
+        <li>
+          <em>Weekly Course Notes</em> contain the definitions, examples, theorems,
+          and worked computations for each week.
+        </li>
+        <li>
+          <em>Weekly In-Class Activities</em> contain collaborative activities for
+          class meetings.
+        </li>
+        <li>
+          <em>Weekly Problem Sets</em> contain the assignments connected to each
+          week&apos;s material.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Use the table of contents to jump between weeks. The search box is useful
+      when you remember a phrase but not the location. The index at the end of
+      the book collects important terms, notation, and methods. For example,
+      entries such as <idx>row reduction</idx>row reduction,
+      <idx>basis</idx>basis, <idx>Euler&apos;s method</idx>Euler&apos;s method, and
+      <idx>eigenvalue</idx>eigenvalue can be added throughout the notes.
+    </p>
+  </section>
+
+  <section xml:id="notation-and-technology">
+    <title>Notation and Technology</title>
+    <p>
+      Vectors are usually written as <m>\vect{v}</m>, matrices as
+      <m>\mat{A}</m>, and real coordinate spaces as <m>\R^n</m>. Computational
+      cells, when included, are meant to support mathematical understanding.
+      Students are not expected to learn a separate programming language unless
+      explicitly stated.
+    </p>
+  </section>
+</preface>

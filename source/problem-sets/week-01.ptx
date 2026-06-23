@@ -1,0 +1,59 @@
+<section xml:id="problem-set-week-01">
+  <title>Problem Set 1: Linear Systems</title>
+
+  <introduction>
+    <p>
+      Replace the due date and instructions below with your course policies.
+    </p>
+  </introduction>
+
+  <assemblage xml:id="ps-week-01-instructions">
+    <title>Instructions</title>
+    <p>
+      Due: Friday of Week 1. Write complete solutions, not just final answers.
+      You may discuss ideas with classmates, but your submitted work should be
+      written independently in your own words.
+    </p>
+  </assemblage>
+
+  <exercises xml:id="ps-week-01-exercises">
+    <title>Exercises</title>
+
+    <exercise xml:id="ps-week-01-row-reduction">
+      <statement>
+        <p>
+          Row reduce the augmented matrix
+          <md>
+            \left[
+            \begin{array}{ccc|c}
+            1 &amp; 0 &amp; 2 &amp; 3\\
+            0 &amp; 1 &amp; -1 &amp; 4\\
+            2 &amp; 1 &amp; 3 &amp; 10
+            \end{array}
+            \right]
+          </md>
+          and describe the solution set.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-week-01-span">
+      <statement>
+        <p>
+          Determine whether <m>(3,1,4)</m> lies in
+          <m>\spanop\{(1,0,1),(0,1,1)\}</m>. Explain your answer using a linear
+          system.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-week-01-reflection">
+      <statement>
+        <p>
+          In two or three sentences, explain the relationship between row
+          reduction and solving a system of linear equations.
+        </p>
+      </statement>
+    </exercise>
+  </exercises>
+</section>

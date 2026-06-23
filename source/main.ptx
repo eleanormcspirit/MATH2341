@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <docinfo>
+    <macros>
+      \newcommand{\R}{\mathbb{R}}
+      \newcommand{\C}{\mathbb{C}}
+      \newcommand{\N}{\mathbb{N}}
+      \newcommand{\Z}{\mathbb{Z}}
+      \newcommand{\vect}[1]{\mathbf{#1}}
+      \newcommand{\mat}[1]{\mathbf{#1}}
+      \newcommand{\spanop}{\operatorname{span}}
+      \newcommand{\rank}{\operatorname{rank}}
+      \newcommand{\nullity}{\operatorname{nullity}}
+    </macros>
+  </docinfo>
+
+  <book xml:id="math2341">
+    <title>MATH 2341: Linear Analysis</title>
+    <subtitle>Numerical Linear Algebra and Differential Equations</subtitle>
+    <author>
+      <personname>Eleanor McSpirit</personname>
+      <department>Department of Mathematics</department>
+      <institution>California Polytechnic State University, San Luis Obispo</institution>
+    </author>
+
+    <frontmatter>
+      <xi:include href="frontmatter/overview.ptx" />
+    </frontmatter>
+
+    <chapter xml:id="course-notes">
+      <title>Weekly Course Notes</title>
+      <introduction>
+        <p>
+          These sections contain the main exposition for each week: definitions,
+          examples, theorems, computational tools, and worked problems.
+        </p>
+      </introduction>
+      <xi:include href="notes/week-01.ptx" />
+    </chapter>
+
+    <chapter xml:id="in-class-activities">
+      <title>Weekly In-Class Activities</title>
+      <introduction>
+        <p>
+          These activities are designed for collaborative work during class.
+          They should be short, purposeful, and closely tied to the week&apos;s notes.
+        </p>
+      </introduction>
+      <xi:include href="activities/week-01.ptx" />
+    </chapter>
+
+    <chapter xml:id="problem-sets">
+      <title>Weekly Problem Sets</title>
+      <introduction>
+        <p>
+          Problem sets collect practice, computation, proof-writing, and reflection
+          exercises. Add one section per week.
+        </p>
+      </introduction>
+      <xi:include href="problem-sets/week-01.ptx" />
+    </chapter>
+
+    <backmatter>
+      <index />
+    </backmatter>
+  </book>
+</pretext>

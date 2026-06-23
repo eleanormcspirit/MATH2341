@@ -1,0 +1,43 @@
+<section xml:id="activity-week-01">
+  <title>Week 1 Activity: Systems and Row Reduction</title>
+
+  <introduction>
+    <p>
+      This activity is intended for small groups. Students should discuss their
+      reasoning before writing final answers.
+    </p>
+  </introduction>
+
+  <activity xml:id="act-week-01-systems">
+    <title>From Equations to Matrices</title>
+    <statement>
+      <p>
+        For each system below, write the augmented matrix, perform row reduction,
+        and interpret the result geometrically.
+      </p>
+    </statement>
+
+    <task>
+      <statement>
+        <p>
+          Solve
+          <md>
+            \begin{aligned}
+            x+2y &amp;= 4,\\
+            2x+4y &amp;= 8.
+            \end{aligned}
+          </md>
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Create a second system with no solutions, then explain how the row
+          reduction reveals inconsistency.
+        </p>
+      </statement>
+    </task>
+  </activity>
+</section>

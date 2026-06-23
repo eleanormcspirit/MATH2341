@@ -1,0 +1,90 @@
+<section xml:id="notes-week-01">
+  <title>Week 1: Vectors, Matrices, and Systems</title>
+
+  <introduction>
+    <p>
+      Replace this introduction with the big-picture goal for the week. A good
+      weekly notes section usually starts with a motivating question and a short
+      list of learning goals.
+    </p>
+  </introduction>
+
+  <objectives>
+    <ul>
+      <li>Interpret vectors in <m>\R^n</m> geometrically and algebraically.</li>
+      <li>Write systems of linear equations in matrix form.</li>
+      <li>Use row reduction to solve linear systems.</li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="notes-week-01-definitions">
+    <title>Definitions</title>
+
+    <definition xml:id="def-vector-rn">
+      <statement>
+        <p>
+          A <term>vector</term> in <m>\R^n</m> is an ordered list
+          <m>\vect{v}=(v_1,v_2,\ldots,v_n)</m> of real numbers.
+        </p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-span">
+      <statement>
+        <p>
+          The <term>span</term> of vectors
+          <m>\vect{v}_1,\ldots,\vect{v}_k</m> in <m>\R^n</m> is the set of all
+          linear combinations
+          <md>
+            \spanop\{\vect{v}_1,\ldots,\vect{v}_k\}
+            =
+            \{c_1\vect{v}_1+\cdots+c_k\vect{v}_k : c_1,\ldots,c_k \in \R\}.
+          </md>
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+
+  <subsection xml:id="notes-week-01-main-result">
+    <title>Main Result</title>
+
+    <theorem xml:id="thm-systems-and-row-reduction">
+      <title>Row Reduction Preserves Solutions</title>
+      <statement>
+        <p>
+          If the augmented matrix of one linear system is obtained from another
+          by elementary row operations, then the two systems have the same
+          solution set.
+        </p>
+      </statement>
+      <proof>
+        <p>
+          Each elementary row operation corresponds to replacing one equation by
+          an equivalent equation or by an equation obtained from reversible
+          algebraic operations. Therefore a vector satisfies the original system
+          if and only if it satisfies the transformed system.
+        </p>
+      </proof>
+    </theorem>
+  </subsection>
+
+  <subsection xml:id="notes-week-01-worked-example">
+    <title>Worked Example</title>
+
+    <example xml:id="ex-row-reduction-template">
+      <title>A Template Row Reduction Example</title>
+      <p>
+        Consider the system whose augmented matrix is
+        <md>
+          \left[
+          \begin{array}{ccc|c}
+          1 &amp; 2 &amp; -1 &amp; 3\\
+          2 &amp; 5 &amp; 1 &amp; 4
+          \end{array}
+          \right].
+        </md>
+        Replace this example with one aligned to your first week of class.
+      </p>
+    </example>
+  </subsection>
+</section>
