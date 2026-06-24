@@ -6,14 +6,15 @@
       format="html"
       source="main.ptx"
       publication="../publication/publication.ptx"
-      output-dir="web" />
-    <target
-      name="web"
-      format="html"
-      source="main.ptx"
-      publication="../publication/publication.ptx"
       output-dir="web">
       <stringparams html.css.extra="external/css/math2341.css" />
     </target>
+
+    <target
+      name="print"
+      format="pdf"
+      source="main.ptx"
+      publication="../publication/publication.ptx"
+      output-dir="print" />
   </targets>
 </project>

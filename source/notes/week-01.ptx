@@ -9,7 +9,7 @@
 
   <objectives>
     <ul>
-      <li>Interpret vectors in <m>\R^n</m> geometrically and algebraically.</li>
+      <li>Interpret vectors in <m>\mathbb{R}^n</m> geometrically and algebraically.</li>
       <li>Write systems of linear equations in matrix form.</li>
       <li>Use row reduction to solve linear systems.</li>
     </ul>
@@ -21,8 +21,8 @@
     <definition xml:id="def-vector-rn">
       <statement>
         <p>
-          A <term>vector</term> in <m>\R^n</m> is an ordered list
-          <m>\vect{v}=(v_1,v_2,\ldots,v_n)</m> of real numbers.
+          A <term>vector</term> in <m>\mathbb{R}^n</m> is an ordered list
+          <m>\vec{v}=(v_1,v_2,\ldots,v_n)</m> of real numbers.
         </p>
       </statement>
     </definition>
@@ -31,12 +31,12 @@
       <statement>
         <p>
           The <term>span</term> of vectors
-          <m>\vect{v}_1,\ldots,\vect{v}_k</m> in <m>\R^n</m> is the set of all
+          <m>\vec{v}_1,\ldots,\vec{v}_k</m> in <m>\mathbb{R}^n</m> is the set of all
           linear combinations
           <md>
-            \spanop\{\vect{v}_1,\ldots,\vect{v}_k\}
+            \mathrm{span}\{\vec{v}_1,\ldots,\vec{v}_k\}
             =
-            \{c_1\vect{v}_1+\cdots+c_k\vect{v}_k : c_1,\ldots,c_k \in \R\}.
+            \{c_1\vec{v}_1+\cdots+c_k\vec{v}_k : c_1,\ldots,c_k \in \mathbb{R}\}.
           </md>
         </p>
       </statement>

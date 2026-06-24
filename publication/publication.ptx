@@ -9,11 +9,8 @@
     <css theme="default-modern"
          primary-color="#154734"
          secondary-color="#BD8B13"
+         provide-dark-mode="no" />
          color-meta="#154734" />
-    <!--
-      If your PreTeXt CLI supports extra CSS through the publication file,
-      point it to ../assets/css/math2341.css. If not, keep this file as a
-      custom stylesheet to copy into the generated HTML assets.
-    -->
+    <banner byline="yes" subtitle="yes" />
   </html>
 </publication>

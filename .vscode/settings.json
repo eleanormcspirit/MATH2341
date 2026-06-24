@@ -14,5 +14,17 @@
       "pattern": "**/source/**.ptx",
       "systemId": "/home/vscode/.vscode-remote/extensions/oscarlevin.pretext-tools-0.38.1/assets/schema/pretext.rng"
     }
-  ]
+  ],
+  "files.exclude": {
+    ".cache": true,
+    ".venv": true,
+    "logs": true,
+    "output": true,
+    "generated-assets": true,
+    "**/.cache": true,
+    "**/.venv": true,
+    "**/logs": true,
+    "**/output": true,
+    "**/generated-assets": true
+  }
 }

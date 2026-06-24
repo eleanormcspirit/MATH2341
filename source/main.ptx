@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude">
-  <docinfo>
-    <macros>
-      \newcommand{\R}{\mathbb{R}}
-      \newcommand{\C}{\mathbb{C}}
-      \newcommand{\N}{\mathbb{N}}
-      \newcommand{\Z}{\mathbb{Z}}
-      \newcommand{\vect}[1]{\mathbf{#1}}
-      \newcommand{\mat}[1]{\mathbf{#1}}
-      \newcommand{\spanop}{\operatorname{span}}
-      \newcommand{\rank}{\operatorname{rank}}
-      \newcommand{\nullity}{\operatorname{nullity}}
-    </macros>
-  </docinfo>
 
   <book xml:id="math2341">
     <title>MATH 2341</title>
@@ -20,9 +7,9 @@
 
   <introduction>
     <paragraphs xml:id="about-this-course">
-    <title>About this Course</title>
+    <title>About this course</title>
     <p>
-      This course is an introduction to linear algebra and differential equations. It covers the following topics in each.
+      This course is an introduction to linear algebra and differential equations. It covers the following topics.
     </p>
     <p>
       <em> Linear algebra:</em> systems of linear equations, linear transformations, determinants, eigenvalues, eigenvectors, and diagonalization. 
@@ -33,10 +20,10 @@
     </p>
   </paragraphs>
 
-  <paragraphs xml:id="about-this-book">
-    <title>About this Book</title>
+  <paragraphs xml:id="about-this-site">
+    <title>About this site</title>
     <p>
-      This online book is organized into three main parts:
+      This online site is organized into three main parts:
       <ul>
         <li>
           <em>Course Notes:</em> Here you will find the basic notes for each week. They are meant to be an after-the-fact resource for your review. Reading the notes is not a substitute for attending class and reading the textbook.
@@ -56,7 +43,7 @@
       <title>Course Notes</title>
       <introduction>
         <p>
-          Here you will find the basic notes for each week. They are meant to be an after-the-fact resource for your review. Reading the notes is not a substitute for attending class and reading the textbook.
+          Here you will find the basic notes for each week. They are meant to be an after-the-fact resource for your review. Reading the notes is not a substitute for attending class or reading the textbook.
         </p>
       </introduction>
       <xi:include href="notes/week-01.ptx" />

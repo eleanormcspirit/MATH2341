@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US" dir="ltr">
+<html lang="en-US" dir="ltr" data-darkmode="disabled">
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/css/math2341.css">
 <script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
 startMathJax({
 hasWebworkReps: false,
@@ -84,16 +85,8 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
 <ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><span class="up-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></span><a class="next-button button" href="course-notes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb{R}}
-\newcommand{\C}{\mathbb{C}}
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\vect}[1]{\mathbf{#1}}
-\newcommand{\mat}[1]{\mathbf{#1}}
-\newcommand{\spanop}{\operatorname{span}}
-\newcommand{\rank}{\operatorname{rank}}
-\newcommand{\nullity}{\operatorname{nullity}}
+<span class="nav-other-controls"></span><span class="treebuttons"><span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><span class="up-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></span><a class="next-button button" href="course-notes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -127,8 +120,8 @@ eBookConfig.enable_chatcodes =  false;
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="book" id="math2341">
 <section class="introduction" id="math2341-3">
-<section class="paragraphs" id="about-this-course"><h3 class="heading"><span class="title">About this Course.</span></h3>
-<div class="para" id="about-this-course-2">This course is an introduction to linear algebra and differential equations. It covers the following topics in each.<div class="autopermalink" data-description="Paragraph"><a href="#about-this-course-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="paragraphs" id="about-this-course"><h3 class="heading"><span class="title">About this course.</span></h3>
+<div class="para" id="about-this-course-2">This course is an introduction to linear algebra and differential equations. It covers the following topics.<div class="autopermalink" data-description="Paragraph"><a href="#about-this-course-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="about-this-course-3">
 <em class="emphasis">Linear algebra:</em> systems of linear equations, linear transformations, determinants, eigenvalues, eigenvectors, and diagonalization.<div class="autopermalink" data-description="Paragraph"><a href="#about-this-course-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -136,31 +129,31 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="about-this-course-4">
 <em class="emphasis">Differential equations:</em> first-order differential equations, higher order linear differential equations, mechanical and electrical vibrations, systems of differential equations, the Laplace transform.<div class="autopermalink" data-description="Paragraph"><a href="#about-this-course-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraphs: About this Course"><a href="#about-this-course" title="Copy heading and permalink for Paragraphs: About this Course" aria-label="Copy heading and permalink for Paragraphs: About this Course">🔗</a></div>
+<div class="autopermalink" data-description="Paragraphs: About this course"><a href="#about-this-course" title="Copy heading and permalink for Paragraphs: About this course" aria-label="Copy heading and permalink for Paragraphs: About this course">🔗</a></div>
 </section>
-<section class="paragraphs" id="about-this-book"><h3 class="heading"><span class="title">About this Book.</span></h3>
-<div class="para logical" id="about-this-book-2">
-<div class="para">This online book is organized into three main parts:</div>
-<ul class="disc" id="about-this-book-2-1">
-<li id="about-this-book-2-1-1">
-<div class="para" id="p-derived-about-this-book-2-1-1">
+<section class="paragraphs" id="about-this-site"><h3 class="heading"><span class="title">About this site.</span></h3>
+<div class="para logical" id="about-this-site-2">
+<div class="para">This online site is organized into three main parts:</div>
+<ul class="disc" id="about-this-site-2-1">
+<li id="about-this-site-2-1-1">
+<div class="para" id="p-derived-about-this-site-2-1-1">
 <em class="emphasis">Course Notes:</em> Here you will find the basic notes for each week. They are meant to be an after-the-fact resource for your review. Reading the notes is not a substitute for attending class and reading the textbook.</div>
-<div class="autopermalink" data-description="Item"><a href="#about-this-book-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#about-this-site-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="about-this-book-2-1-2">
-<div class="para" id="p-derived-about-this-book-2-1-2">
+<li id="about-this-site-2-1-2">
+<div class="para" id="p-derived-about-this-site-2-1-2">
 <em class="emphasis">In-Class Activities:</em> These activities are designed for collaborative work during class, and are meant to confirm and practice the concepts covered in class that week.</div>
-<div class="autopermalink" data-description="Item"><a href="#about-this-book-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#about-this-site-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="about-this-book-2-1-3">
-<div class="para" id="p-derived-about-this-book-2-1-3">
+<li id="about-this-site-2-1-3">
+<div class="para" id="p-derived-about-this-site-2-1-3">
 <em class="emphasis">Problem Sets:</em> Problem sets give you an opportunity to practice and extend the concepts covered in class the previous week. They are meant to be completed outside of class.</div>
-<div class="autopermalink" data-description="Item"><a href="#about-this-book-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#about-this-site-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#about-this-book-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#about-this-site-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraphs: About this Book"><a href="#about-this-book" title="Copy heading and permalink for Paragraphs: About this Book" aria-label="Copy heading and permalink for Paragraphs: About this Book">🔗</a></div>
+<div class="autopermalink" data-description="Paragraphs: About this site"><a href="#about-this-site" title="Copy heading and permalink for Paragraphs: About this site" aria-label="Copy heading and permalink for Paragraphs: About this site">🔗</a></div>
 </section></section><nav class="summary-links"><ul>
 <li><a href="course-notes.html" class="internal"><span class="codenumber">1</span> <span class="title">Course Notes</span></a></li>
 <li><a href="in-class-activities.html" class="internal"><span class="codenumber">2</span> <span class="title">In-Class Activities</span></a></li>

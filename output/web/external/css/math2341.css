@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-roman.css");
+@import url("https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-mono.css");
 
 :root {
   --math2341-poly-green: #154734;
@@ -7,16 +8,22 @@
   --math2341-ink: #1f2522;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --math2341-poly-green: #BD8B13;
+    --math2341-mustang-gold: #154734;
+  }
+}
+
 body {
   background: var(--math2341-paper);
   color: var(--math2341-ink);
 }
 
-/* Make the main HTML text feel closer to LaTeX. */
+/* Main textbook typography. */
 body,
-.ptx-content,
 .ptx-page,
-article,
+.ptx-content,
 .ptx-content p,
 .ptx-content li,
 .ptx-content td,
@@ -27,14 +34,14 @@ article,
 .ptx-content .solution,
 .ptx-content .hint,
 .ptx-content .answer {
-  font-family: "STIX Two Text", "Latin Modern Roman", "Computer Modern Serif",
+  font-family: "Latin Modern Roman", "STIX Two Text", "Computer Modern Serif",
     "CMU Serif", "Times New Roman", serif !important;
   font-variant-ligatures: common-ligatures;
   text-rendering: optimizeLegibility;
 }
 
 .ptx-content {
-  font-size: 1.04rem;
+  font-size: 1.06rem;
   line-height: 1.55;
 }
 
@@ -43,6 +50,7 @@ article,
   margin-bottom: 0.55rem;
 }
 
+/* Headings and links. */
 .ptx-content h1,
 .ptx-content h2,
 .ptx-content h3,
@@ -50,7 +58,7 @@ article,
 .ptx-content .heading,
 .ptx-content .title {
   color: var(--math2341-poly-green);
-  font-family: "STIX Two Text", "Latin Modern Roman", "Computer Modern Serif",
+  font-family: "Latin Modern Roman", "STIX Two Text", "Computer Modern Serif",
     "CMU Serif", "Times New Roman", serif !important;
 }
 
@@ -63,6 +71,7 @@ article,
   color: var(--math2341-mustang-gold);
 }
 
+/* Theorem-like blocks. */
 .ptx-content .definition-like,
 .ptx-content .theorem-like,
 .ptx-content .example-like,
@@ -75,11 +84,32 @@ article,
   border-color: var(--math2341-mustang-gold);
 }
 
-.ptx-content .sagecell,
-.ptx-content .sage,
+/* Code and Sage cells. */
 .ptx-content pre,
 .ptx-content code,
-.ptx-content .code {
+.ptx-content .code,
+.ptx-content .sage,
+.ptx-content .sagecell {
   font-family: "Latin Modern Mono", "CMU Typewriter Text", "SFMono-Regular",
-    Consolas, "Liberation Mono", monospace;
+    Consolas, "Liberation Mono", monospace !important;
+}
+
+/* Instructor name in the repeating PreTeXt masthead/header. */
+#ptx-masthead .title-container::after {
+  content: "Prof. Eleanor McSpirit";
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: inherit;
+}
+
+/* Larger side table of contents. */
+.ptx-toc,
+.ptx-toc a,
+.ptx-toc .toc-item,
+.ptx-toc .toc-item a {
+  font-size: 1.15rem;
+  line-height: 1.35;
 }
