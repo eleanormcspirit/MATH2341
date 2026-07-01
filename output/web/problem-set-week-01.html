@@ -36,7 +36,7 @@ htmlPresentation: false,
 <meta name="twitter:description" content="Linear Analysis">
 <meta property="og:description" content="Linear Analysis">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.42"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.43"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -58,15 +58,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.7';
+eBookConfig.runestone_version = '8.1.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.2f713d2360adcee7.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.917dfc3cfe0bb764.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.39f982db166f319d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -75,17 +75,31 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="math2341.html"><span class="title">MATH 2341</span> <span class="subtitle">Linear Analysis</span></a></h1>
 <p class="byline"></p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
-<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search book" commandfor="ptx-search-dialog" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog" closedby="closerequest"><div class="ptx-search-dialog-controls">
-<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close search" id="ptx-search-close" class="ptx-search-close" commandfor="ptx-search-dialog" command="close"><span class="material-symbols-outlined">close</span></button>
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
 <div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
-<h2 class="ptx-search-results-heading">Search Results: </h2>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
 <div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
 <ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="problem-sets.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="problem-sets.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="problem-sets.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="problem-sets.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -94,27 +108,20 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="codenumber">1</span> <span class="title">Course Notes</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Week 1: Vectors, Matrices, and Systems</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-definitions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Definitions</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-main-result" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Main Result</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-worked-example" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Worked Example</span></a></div></li>
-</ul>
-</li></ul>
+<ul id="ptx-toc-group-course-notes" class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Week 1</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="in-class-activities.html" class="internal"><span class="codenumber">2</span> <span class="title">In-Class Activities</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="activity-week-01.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Week 1 Activity: Systems and Row Reduction</span></a></div></li></ul>
+<ul id="ptx-toc-group-in-class-activities" class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="activity-week-01.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Week 1 Activity: Systems and Row Reduction</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="problem-sets.html" class="internal"><span class="codenumber">3</span> <span class="title">Problem Sets</span></a></div>
-<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section contains-active">
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-problem-sets"><li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="problem-set-week-01.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Problem Set 1: Linear Systems</span></a></div>
-<ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="problem-set-week-01.html#ps-week-01-exercises" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul class="structural toc-item-list active" id="ptx-toc-group-problem-set-week-01"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="problem-set-week-01.html#ps-week-01-exercises" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
 </li></ul>
 </li>
 </ul></nav></div>
@@ -124,12 +131,12 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem Set 1: Linear Systems</span>
 </h2>
 <section class="introduction" id="problem-set-week-01-2">
-<div class="para" id="problem-set-week-01-2-1">Replace the due date and instructions below with your course policies.<div class="autopermalink" data-description="Paragraph"><a href="#problem-set-week-01-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="problem-set-week-01-2-1">Replace the due date and instructions below with your course policies.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#problem-set-week-01-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
 <article class="assemblage assemblage-like" id="ps-week-01-instructions"><h3 class="heading"><span class="title">Instructions.</span></h3>
-<div class="para" id="ps-week-01-instructions-2">Due: Friday of Week 1. Write complete solutions, not just final answers. You may discuss ideas with classmates, but your submitted work should be written independently in your own words.<div class="autopermalink" data-description="Paragraph"><a href="#ps-week-01-instructions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ps-week-01-instructions-2">Due: Friday of Week 1. Write complete solutions, not just final answers. You may discuss ideas with classmates, but your submitted work should be written independently in your own words.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ps-week-01-instructions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: Instructions"><a href="#ps-week-01-instructions" title="Copy heading and permalink for Assemblage: Instructions" aria-label="Copy heading and permalink for Assemblage: Instructions">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Assemblage: Instructions"><a tabindex="-1" href="#ps-week-01-instructions" title="Copy heading and permalink for Assemblage: Instructions" aria-label="Copy heading and permalink for Assemblage: Instructions">🔗</a></div>
 </article>
 <section class="exercises" id="ps-week-01-exercises">
 <h3 class="heading hide-type">
@@ -150,21 +157,21 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">and describe the solution set.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ps-week-01-row-reduction-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ps-week-01-row-reduction-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 3.1.1"><a href="#ps-week-01-row-reduction" title="Copy heading and permalink for Exercise 3.1.1" aria-label="Copy heading and permalink for Exercise 3.1.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 3.1.1"><a tabindex="-1" href="#ps-week-01-row-reduction" title="Copy heading and permalink for Exercise 3.1.1" aria-label="Copy heading and permalink for Exercise 3.1.1">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="ps-week-01-span"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ps-week-01-span-1-1">Determine whether <span class="process-math">\((3,1,4)\)</span> lies in <span class="process-math">\(\spanop\{(1,0,1),(0,1,1)\}\text{.}\)</span> Explain your answer using a linear system.<div class="autopermalink" data-description="Paragraph"><a href="#ps-week-01-span-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ps-week-01-span-1-1">Determine whether <span class="process-math">\((3,1,4)\)</span> lies in <span class="process-math">\(\spanop\{(1,0,1),(0,1,1)\}\text{.}\)</span> Explain your answer using a linear system.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ps-week-01-span-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 3.1.2"><a href="#ps-week-01-span" title="Copy heading and permalink for Exercise 3.1.2" aria-label="Copy heading and permalink for Exercise 3.1.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 3.1.2"><a tabindex="-1" href="#ps-week-01-span" title="Copy heading and permalink for Exercise 3.1.2" aria-label="Copy heading and permalink for Exercise 3.1.2">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="ps-week-01-reflection"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ps-week-01-reflection-1-1">In two or three sentences, explain the relationship between row reduction and solving a system of linear equations.<div class="autopermalink" data-description="Paragraph"><a href="#ps-week-01-reflection-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ps-week-01-reflection-1-1">In two or three sentences, explain the relationship between row reduction and solving a system of linear equations.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ps-week-01-reflection-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 3.1.3"><a href="#ps-week-01-reflection" title="Copy heading and permalink for Exercise 3.1.3" aria-label="Copy heading and permalink for Exercise 3.1.3">🔗</a></div>
-</article><div class="autopermalink" data-description="Exercises 3.1: Exercises"><a href="#ps-week-01-exercises" title="Copy heading and permalink for Exercises 3.1: Exercises" aria-label="Copy heading and permalink for Exercises 3.1: Exercises">🔗</a></div>
-</section><div class="autopermalink" data-description="Section 3.1: Problem Set 1: Linear Systems"><a href="#problem-set-week-01" title="Copy heading and permalink for Section 3.1: Problem Set 1: Linear Systems" aria-label="Copy heading and permalink for Section 3.1: Problem Set 1: Linear Systems">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 3.1.3"><a tabindex="-1" href="#ps-week-01-reflection" title="Copy heading and permalink for Exercise 3.1.3" aria-label="Copy heading and permalink for Exercise 3.1.3">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercises 3.1: Exercises"><a tabindex="-1" href="#ps-week-01-exercises" title="Copy heading and permalink for Exercises 3.1: Exercises" aria-label="Copy heading and permalink for Exercises 3.1: Exercises">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 3.1: Problem Set 1: Linear Systems"><a tabindex="-1" href="#problem-set-week-01" title="Copy heading and permalink for Section 3.1: Problem Set 1: Linear Systems" aria-label="Copy heading and permalink for Section 3.1: Problem Set 1: Linear Systems">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">

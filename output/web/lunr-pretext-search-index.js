@@ -6,53 +6,53 @@ var ptx_lunr_docs = [
   "url": "notes-week-01.html",
   "type": "Section",
   "number": "1.1",
-  "title": "Week 1: Vectors, Matrices, and Systems",
-  "body": " Week 1: Vectors, Matrices, and Systems   Put a goal at the top of each lecture note. Below is just sample filler.     Interpret vectors in geometrically and algebraically.  Write systems of linear equations in matrix form.  Use row reduction to solve linear systems.     Definitions    A vector in is an ordered list of real numbers.      The span of vectors in is the set of all linear combinations       Main Result   Row Reduction Preserves Solutions   If the augmented matrix of one linear system is obtained from another by elementary row operations, then the two systems have the same solution set.    Each elementary row operation corresponds to replacing one equation by an equivalent equation or by an equation obtained from reversible algebraic operations. Therefore a vector satisfies the original system if and only if it satisfies the transformed system.      Worked Example   A Template Row Reduction Example  Consider the system whose augmented matrix is Replace this example with one aligned to your first week of class.    "
+  "title": "Week 1",
+  "body": " Week 1    A linear equation in the variables is an equation of the form   where the and are constants.     The equation   is linear.   A system of linear equations is a collection of linear equations involving the same variables (e.g. ).    A solution to a system is a choice of values for the variables that makes every equation in the system true.  The solution set is the set of all solutions to a system of linear equations.     The system of linear equations   has solution because   You can see that this is the only solution by algebraically eliminating one of the variables, or by graphing the two lines and seeing that they intersect at a single point, as shown below.   Graph of the lines x plus y equals 5 and 2x minus y equals 1 intersecting at the point (2,3).     "
+},
+{
+  "id": "notes-week-01-2",
+  "level": "2",
+  "url": "notes-week-01.html#notes-week-01-2",
+  "type": "Definition",
+  "number": "1.1.1",
+  "title": "",
+  "body": "  A linear equation in the variables is an equation of the form   where the and are constants.   "
 },
 {
   "id": "notes-week-01-3",
   "level": "2",
   "url": "notes-week-01.html#notes-week-01-3",
-  "type": "Objectives",
-  "number": "1.1",
-  "title": "",
-  "body": "  Interpret vectors in geometrically and algebraically.  Write systems of linear equations in matrix form.  Use row reduction to solve linear systems.   "
-},
-{
-  "id": "def-vector-rn",
-  "level": "2",
-  "url": "notes-week-01.html#def-vector-rn",
-  "type": "Definition",
-  "number": "1.1.1",
-  "title": "",
-  "body": "  A vector in is an ordered list of real numbers.   "
-},
-{
-  "id": "def-span",
-  "level": "2",
-  "url": "notes-week-01.html#def-span",
-  "type": "Definition",
+  "type": "Example",
   "number": "1.1.2",
   "title": "",
-  "body": "  The span of vectors in is the set of all linear combinations    "
+  "body": " The equation   is linear.  "
 },
 {
-  "id": "thm-systems-and-row-reduction",
+  "id": "notes-week-01-4",
   "level": "2",
-  "url": "notes-week-01.html#thm-systems-and-row-reduction",
-  "type": "Theorem",
+  "url": "notes-week-01.html#notes-week-01-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "system of linear equations "
+},
+{
+  "id": "notes-week-01-5",
+  "level": "2",
+  "url": "notes-week-01.html#notes-week-01-5",
+  "type": "Definition",
   "number": "1.1.3",
-  "title": "Row Reduction Preserves Solutions.",
-  "body": " Row Reduction Preserves Solutions   If the augmented matrix of one linear system is obtained from another by elementary row operations, then the two systems have the same solution set.    Each elementary row operation corresponds to replacing one equation by an equivalent equation or by an equation obtained from reversible algebraic operations. Therefore a vector satisfies the original system if and only if it satisfies the transformed system.   "
+  "title": "",
+  "body": "  A solution to a system is a choice of values for the variables that makes every equation in the system true.  The solution set is the set of all solutions to a system of linear equations.   "
 },
 {
-  "id": "ex-row-reduction-template",
+  "id": "notes-week-01-6",
   "level": "2",
-  "url": "notes-week-01.html#ex-row-reduction-template",
+  "url": "notes-week-01.html#notes-week-01-6",
   "type": "Example",
   "number": "1.1.4",
-  "title": "A Template Row Reduction Example.",
-  "body": " A Template Row Reduction Example  Consider the system whose augmented matrix is Replace this example with one aligned to your first week of class.  "
+  "title": "",
+  "body": " The system of linear equations   has solution because   You can see that this is the only solution by algebraically eliminating one of the variables, or by graphing the two lines and seeing that they intersect at a single point, as shown below.   Graph of the lines x plus y equals 5 and 2x minus y equals 1 intersecting at the point (2,3).    "
 },
 {
   "id": "activity-week-01",

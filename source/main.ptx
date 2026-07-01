@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <docinfo>
+    <latex-image-preamble>
+      \usepackage{tikz}
+    </latex-image-preamble>
+  </docinfo>
 
   <book xml:id="math2341">
     <title>MATH 2341</title>

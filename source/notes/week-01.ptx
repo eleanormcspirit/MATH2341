@@ -1,88 +1,97 @@
 <section xml:id="notes-week-01">
-  <title>Week 1: Vectors, Matrices, and Systems</title>
+  <title>Week 1</title>
 
-  <introduction>
-    <p>
-      Put a goal at the top of each lecture note. Below is just sample filler. 
-    </p>
-  </introduction>
-
-  <objectives>
-    <ul>
-      <li>Interpret vectors in <m>\mathbb{R}^n</m> geometrically and algebraically.</li>
-      <li>Write systems of linear equations in matrix form.</li>
-      <li>Use row reduction to solve linear systems.</li>
-    </ul>
-  </objectives>
-
-  <subsection xml:id="notes-week-01-definitions">
-    <title>Definitions</title>
-
-    <definition xml:id="def-vector-rn">
-      <statement>
-        <p>
-          A <term>vector</term> in <m>\mathbb{R}^n</m> is an ordered list
-          <m>\vec{v}=(v_1,v_2,\ldots,v_n)</m> of real numbers.
-        </p>
-      </statement>
-    </definition>
-
-    <definition xml:id="def-span">
-      <statement>
-        <p>
-          The <term>span</term> of vectors
-          <m>\vec{v}_1,\ldots,\vec{v}_k</m> in <m>\mathbb{R}^n</m> is the set of all
-          linear combinations
-          <md>
-            \mathrm{span}\{\vec{v}_1,\ldots,\vec{v}_k\}
-            =
-            \{c_1\vec{v}_1+\cdots+c_k\vec{v}_k : c_1,\ldots,c_k \in \mathbb{R}\}.
-          </md>
-        </p>
-      </statement>
-    </definition>
-  </subsection>
-
-  <subsection xml:id="notes-week-01-main-result">
-    <title>Main Result</title>
-
-    <theorem xml:id="thm-systems-and-row-reduction">
-      <title>Row Reduction Preserves Solutions</title>
-      <statement>
-        <p>
-          If the augmented matrix of one linear system is obtained from another
-          by elementary row operations, then the two systems have the same
-          solution set.
-        </p>
-      </statement>
-      <proof>
-        <p>
-          Each elementary row operation corresponds to replacing one equation by
-          an equivalent equation or by an equation obtained from reversible
-          algebraic operations. Therefore a vector satisfies the original system
-          if and only if it satisfies the transformed system.
-        </p>
-      </proof>
-    </theorem>
-  </subsection>
-
-  <subsection xml:id="notes-week-01-worked-example">
-    <title>Worked Example</title>
-
-    <example xml:id="ex-row-reduction-template">
-      <title>A Template Row Reduction Example</title>
+<definition>
+    <statement>
       <p>
-        Consider the system whose augmented matrix is
-        <md>
-          \left[
-          \begin{array}{ccc|c}
-          1 &amp; 2 &amp; -1 &amp; 3\\
-          2 &amp; 5 &amp; 1 &amp; 4
-          \end{array}
-          \right].
-        </md>
-        Replace this example with one aligned to your first week of class.
+        A <term>linear equation</term> in the variables
+        <m>x_{1},x_{2},\ldots,x_{n}</m> is an equation of the form
       </p>
-    </example>
-  </subsection>
+      <md>
+        a_{1}x_{1}+a_{2}x_{2}+\cdots+a_{n}x_{n}=b,
+      </md>
+
+      <p>
+        where the <m>a_{1},\ldots,a_{n}</m> and <m>b</m> are constants.
+      </p>
+    </statement>
+  </definition>
+
+  <example>
+     <p>
+    The equation
+  </p>
+  <md>
+    3x_{1}-2x_{2}+7x_{3}=5
+  </md>
+  <p>
+    is linear.
+  </p>
+  </example>
+
+    <p>
+    A <term>system of linear equations</term> is a collection of linear
+    equations involving the same variables (e.g.
+    <m>x_{1}, x_{2}, \dots, x_{n}</m> ).
+  </p>
+
+  <definition>
+    <statement>
+      <p>
+        A <term>solution</term> to a system is a choice of values for the
+        variables that makes every equation in the system true.
+      </p>
+
+      <p>
+        The <term>solution set</term> is the set of all solutions to a system
+        of linear equations.
+      </p>
+    </statement>
+  </definition>
+
+  <example>
+      <p>
+        The system of linear equations
+      </p>
+      <md>
+        \begin{aligned}x+y&amp;= 5,\\ 2x-y&amp;= 1 \end{aligned}
+      </md>
+
+      <p>
+        has solution <m>x=2, y=3</m> because
+      </p>
+      <md>
+        2+3=5 \quad \textit{and}\quad 2(2)-3=1.
+      </md>
+      <p>
+        You can see that this is the only solution by algebraically eliminating one of the variables, or by graphing the two lines and seeing that they intersect at a single point, as shown below.
+      </p>
+
+        <image width="60%">
+    <shortdescription>
+      Graph of the lines x plus y equals 5 and 2x minus y equals 1 intersecting at the point (2,3).
+    </shortdescription>
+    <latex-image>
+\begin{tikzpicture}
+  \draw[step=2, gray!25, thin] (-2,-2) grid (8,8);
+  \draw[->, thick] (-2,0) -- (7.2,0) node[right] {$x$};
+  \draw[->, thick] (0,-2) -- (0,7.1) node[above] {$y$};
+  \foreach \x in {2,4,6}
+    \draw (\x,0.08) -- (\x,-0.08) node[below] {\small $\x$};
+  \foreach \y in {2,4,6}
+    \draw (0.08,\y) -- (-0.08,\y) node[left] {\small $\y$};
+  \draw[very thick, blue] (-1.5,6.5) -- (6.5,-1.5)
+    node[pos=0.6, above right] {$x+y=5$};
+  \draw[very thick, red] (-0.25,-1.5) -- (4.25,7.5)
+    node[pos=0.8, right] {$2x-y=1$};
+  \filldraw[black] (2,3) circle (3pt);
+  \node[above right] at (2.25,2.75) {$(2,3)$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+
+  </example>
+
+
+
 </section>

@@ -7,7 +7,7 @@
     },
     "ghcr.io/devcontainers/features/git-lfs:1": {}
   },
-  "postCreateCommand": "bash .devcontainer/setup-pretext.sh",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y texlive-xetex texlive-pictures && bash .devcontainer/setup-pretext.sh",
   "remoteEnv": {
     "PATH": "${containerEnv:PATH}:${containerEnv:HOME}/.local/bin"
   },
